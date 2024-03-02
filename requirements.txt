@@ -7,3 +7,4 @@ pandas
 numpy 
 matplotlib
 ipykernel
+opencv-python
