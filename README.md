@@ -50,19 +50,15 @@ We welcome contributions from the community. To contribute to the dataset, you c
    
 This label will be used to categorize the image as impulse or non-impulse in the dataset.
 
-8. **Save and Commit Your Images:** Save your processed and labeled images in the `data/` directory. Commit these changes to your fork.
+8. **Save and Commit Your Images:** Preprossessing of the image and data directory is already automated within the code!
 9. **Push to Your Fork:** Push the changes to your forked repository on GitHub.
 10. **Create a Pull Request:** Navigate back to the original repository and click on 'New pull request'. Select your fork and submit the request.
 
-Please ensure that any data you contribute is freely available and does not infringe on any copyrights.
+
 
 ## Data Usage
 
 The dataset can be used to train machine learning models to recognize and predict Elliott Wave patterns in financial markets. By contributing to this dataset, you are helping to advance the research in algorithmic trading and technical analysis.
-
-## License
-
-This project is open-sourced under the MIT License - see the [LICENSE.md](LICENSE) file for details.
 
 ## Acknowledgments
 
