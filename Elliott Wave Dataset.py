@@ -58,8 +58,7 @@ if not os.path.isfile(csv_file_path):
         writer.writerow(['filename', 'label'])
 
 # Set the label for the image (False for non-impulse and True for impulse)
-is_impulse = False 
-
+is_impulse = SET_LABEL_HERE 
 
 # Append the new image data to the CSV file
 with open(csv_file_path, mode='a', newline='') as file:
