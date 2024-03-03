@@ -23,7 +23,7 @@ We welcome contributions from the community. To contribute to the dataset, you c
 1. **Fork this Repository:** Click the 'Fork' button at the top right of this page.
 2. **Clone the Forked Repository:** Clone it to your local machine.
 3. **Initialize Environment:** Run `pip install -r requirements.txt` to install dependencies. This repository is set up with Python 3.9.0.
-4. **Generate Data:** Use the following script to download historical price data for your chosen stock symbol within a date range that includes a full impulse wave:
+4. **Generate Data:** Use the following script located within the ```Elliott Wave Dataset.ipynb``` or ```Elliott Wave Dataset.py``` file to download historical price data for your chosen stock symbol within a date range that includes a full impulse wave:
 
    ```python
    import yfinance as yf
