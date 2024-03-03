@@ -22,7 +22,8 @@ We welcome contributions from the community. To contribute to the dataset, you c
 
 1. **Fork this Repository:** Click the 'Fork' button at the top right of this page.
 2. **Clone the Forked Repository:** Clone it to your local machine.
-3. **Generate Data:** Use the following script to download historical price data for your chosen stock symbol within a date range that includes a full impulse wave:
+3. **Initialize Environment:** Run `pip install -r requirements.txt` to install dependencies. This repository is set up with Python 3.9.0.
+4. **Generate Data:** Use the following script to download historical price data for your chosen stock symbol within a date range that includes a full impulse wave:
 
    ```python
    import yfinance as yf
@@ -35,24 +36,29 @@ We welcome contributions from the community. To contribute to the dataset, you c
    print(stock_data.head())
    stock_data.to_csv('data.csv')
    ```
+   
+  Replace `YOUR_STOCK_SYMBOL`, `YYYY-MM-DD` for `start_date`, and `YYYY-MM-DD` for `end_date` with the appropriate values for the financial instrument and time period you are analyzing.
 
-   Replace `YOUR_STOCK_SYMBOL`, `YYYY-MM-DD` for `start_date`, and `YYYY-MM-DD` for `end_date` with the appropriate values for the financial instrument and time period you are analyzing.
+5. **Identify Impulse Waves:** Manually identify segments in the data that show a clear impulse wave structure.
+6. **Generate Chart Images:** Create chart images from the identified segments. Use a Python script or a Jupyter notebook, whichever you prefer, to process the images.
+7. **Label the Images:** For each image you generate, set the `is_impulse` label appropriately:
 
-4. **Identify Impulse Waves:** Manually identify segments in the data that show a clear impulse wave structure.
-5. **Generate Chart Images:** Create chart images from the identified segments and label them accordingly.
-6. **Commit Your Changes:** Add your new chart images and any associated labels to the `data/` directory.
-7. **Push to Your Fork:** Push the changes to your forked repository on GitHub.
-8. **Create a Pull Request:** Navigate back to the original repository and click on 'New pull request'. Select your fork and submit the request.
+   ```python
+   # Set the label for the image (False for non-impulse, True for impulse)
+   is_impulse = SET_LABEL_HERE  # Replace SET_LABEL_HERE with True or False
+   ```
+   
+This label will be used to categorize the image as impulse or non-impulse in the dataset.
 
-Please ensure that any data you contribute is freely available and does not infringe on any copyrights.
+8. **Save and Commit Your Images:** Preprossessing of the image and data directory is already automated within the code!
+9. **Push to Your Fork:** Push the changes to your forked repository on GitHub.
+10. **Create a Pull Request:** Navigate back to the original repository and click on 'New pull request'. Select your fork and submit the request.
+
+
 
 ## Data Usage
 
 The dataset can be used to train machine learning models to recognize and predict Elliott Wave patterns in financial markets. By contributing to this dataset, you are helping to advance the research in algorithmic trading and technical analysis.
-
-## License
-
-This project is open-sourced under the MIT License - see the [LICENSE.md](LICENSE) file for details.
 
 ## Acknowledgments
 
