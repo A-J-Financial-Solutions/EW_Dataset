@@ -4,12 +4,14 @@ import pandas as pd
 import numpy as np
 import matplotlib.pyplot as plt
 import cv2
+import os
+import csv
 
 # %%
 # Change the stock symbol and date range
-stock_symbol = 'SPY'
-start_date = '2018-12-24'
-end_date = '2020-02-19'
+stock_symbol = 'AMZN'
+start_date = '2020-9-2'
+end_date = '2021-3-8'
 
 stock_data = yf.download(stock_symbol, start=start_date, end=end_date)
 
@@ -23,6 +25,7 @@ plt.title(f'{stock_symbol} Close Price')
 plt.xlabel('Date')
 plt.ylabel('Close Price')
 plt.savefig(f'./mnt/data/train/{stock_symbol}_{start_date}_to_{end_date}.png')
+plt.show()
 plt.close()
 
 # %%
@@ -58,7 +61,7 @@ if not os.path.isfile(csv_file_path):
         writer.writerow(['filename', 'label'])
 
 # Set the label for the image (False for non-impulse and True for impulse)
-is_impulse = SET_LABEL_HERE 
+is_impulse = False 
 
 # Append the new image data to the CSV file
 with open(csv_file_path, mode='a', newline='') as file:
