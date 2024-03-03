@@ -4,11 +4,15 @@
 
 This repository is dedicated to building an open-source dataset for recognizing Elliott Wave patterns in financial markets using Convolutional Neural Networks (CNNs). Elliott Wave theory is a method of technical analysis that looks for recurrent long-term price patterns associated with ongoing changes in investor sentiment and psychology.
 
-The goal of this dataset is to provide a comprehensive set of impulse wave structures from various financial instruments for use in training machine learning models.
+The goal of this dataset is to provide a comprehensive set of impulse wave structures from various financial instruments for use in training machine learning models. 
 
 ## Dataset Structure
 
 The dataset consists of chart images generated from historical price data that exhibit impulse wave structures according to Elliott Wave Theory. Each image is labeled with the sequence of the wave it represents.
+
+<p align="center">
+  <img src="https://github.com/A-J-Financial-Solutions/EW_Dataset/assets/98991855/d0d3583c-1e70-4014-a718-c5c536cd6167" width="400" alt="Example Impulse Wave">
+</p>
 
 ## Contribution Guidelines
 
