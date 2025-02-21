@@ -2,7 +2,7 @@
 
 ## Introduction
 
-This repository is dedicated to building an open-source dataset for recognizing Elliott Wave patterns in financial markets using Convolutional Neural Networks (CNNs). Elliott Wave theory is a method of technical analysis that looks for recurrent long-term price patterns associated with ongoing changes in investor sentiment and psychology.
+This repository is dedicated to building an open-source contribution for recognizing Elliott Wave patterns in financial markets using Convolutional Neural Networks (CNNs). Elliott Wave theory is a method of technical analysis that looks for recurrent long-term price patterns associated with ongoing changes in investor sentiment and psychology.
 
 The goal of this dataset is to provide a comprehensive set of impulse wave structures from various financial instruments for use in training machine learning models. 
 
