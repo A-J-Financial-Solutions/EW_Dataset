@@ -59,12 +59,3 @@ This label will be used to categorize the image as impulse or non-impulse in the
 ## Data Usage
 
 The dataset can be used to train machine learning models to recognize and predict Elliott Wave patterns in financial markets. By contributing to this dataset, you are helping to advance the research in algorithmic trading and technical analysis.
-
-## Acknowledgments
-
-- All contributors who help in expanding and maintaining this dataset.
-- [yfinance](https://pypi.org/project/yfinance/) for providing an easy-to-use API to access historical market data.
-
----
-
-Thank you for your interest in contributing to the Elliott Wave Dataset for CNN. Together, we can create a valuable resource for traders and researchers around the globe.
